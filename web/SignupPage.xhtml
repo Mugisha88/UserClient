@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <!-- Favicon -->
+<link rel="stylesheet" type="text/css" href="assets/login/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/login/css/fontawesome-all.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/login/css/style.css" />
+<link rel="stylesheet" type="text/css" href="assets/login/css/tit_school.css" />
+        <title>USER MANAGEMENT</title>
+    </h:head>
+    <h:body>
+<div class="form-body">
+        <div class="row">
+            <div class="img-holder">
+                <div class="bg"></div>
+                <div class="info-holder">
+                    <h3>Register </h3>
+                    <p>Register yourself in order to access the system   :</p><br />
+                </div>
+            </div>
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Register Yourself</h3>
+                        <h:form id="booking-frm">
+                    <!--<h:panelGrid columns="2" >-->
+                <h:message id="keyMsg" for="user-frm"  style="color: red;" />
+                <h:outputLabel value="FirstName"/>
+                <h:inputText class="form-control" value="#{BB.user.firstname}" />
+                <h:outputLabel value="LastName"/>
+                <h:inputText class="form-control" value="#{BB.user.lastname}" />
+                <h:outputLabel value="dob"/>
+                <h:inputText class="form-control" value="#{BB.user.dob}" />
+                <h:outputLabel value="email"/>
+                <h:inputText class="form-control" value="#{BB.user.email}" />
+                <h:outputLabel value="password"/>
+                <h:inputSecret class="form-control" value="#{BB.user.password}" />
+                <h:outputLabel value="Phone"/>
+                <h:inputText class="form-control" value="#{BB.user.phone}" />
+                <div class="form-button">
+                    <h:commandButton value="Save" action="#{BB.createUser()}" class="ibtn">
+                </h:commandButton> <a href="index.xhtml">Login in here</a>
+                    </div>
+<!--            </h:panelGrid>-->
+        </h:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/homepage/js/jquery.min.js"></script>
+<script src="assets/homepage/js/bootstrap.min.js"></script>
+<script src="assets/homepage/js/jquery.easing.min.js"></script>
+<script src="assets/homepage/js/lity.min.js"></script>
+<script src="assets/homepage/js/custom.js"></script>
+    </h:body>
+</html>
+
